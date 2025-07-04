@@ -41,7 +41,7 @@ const HeroSectionTwo = () => {
               <div className="hero__content hero__content-2 p-relative z-index-1">
                 <h3 className="hero__title hero__title-2">
                   Govt. Regd. 100% Job Support<br /> 
-                  Gorakhpur’s No.1 IT Academy  –  <span className="yellow-shape">RAIT
+                  Gorakhpur No.1 IT Academy  –  <span className="yellow-shape">RAIT
                     <Image
                       src={YellowBg}
                       style={{ width: "auto", height: "auto" }}
