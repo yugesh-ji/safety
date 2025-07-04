@@ -24,7 +24,7 @@ const SkillineSection = () => {
                 </span>
               </h2>
               <p>
-                Skilline is RAIT's future-ready tech learning platform that empowers students with in-demand Computer & IT skills — all backed by lifetime tech support and 100% Job Assistance.
+                Skilline is RAIT future-ready tech learning platform that empowers students with in-demand Computer & IT skills — all backed by lifetime tech support and 100% Job Assistance.
               </p>
             </div>
           </div>
