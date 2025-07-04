@@ -14,7 +14,6 @@ const ContactContent = () => {
           style={{ width: "auto", height: "auto" }}
           alt="img not found"
         />
-
         <Image
           className="contact-shape-4"
           src={shape2}
@@ -35,18 +34,17 @@ const ContactContent = () => {
                 </svg>
               </div>
               <div className="contact__content">
-                <h3 className="contact__title">Knowledge Base</h3>
+                <h3 className="contact__title">Student Helpdesk</h3>
                 <p>
-                  My good sir plastered cuppa barney cobblers mush argy bargy
-                  ruddy.
+                  Notes, syllabus ya kisi bhi query ke liye aap hamari knowledge base ka use kar sakte hain.
                 </p>
-                <Link href="/" className="e-btn e-btn-border">
-                  Visit Documentation
+                <Link href="/support-docs" className="e-btn e-btn-border">
+                  Visit Knowledge Base
                 </Link>
               </div>
             </div>
           </div>
-          <div className="col-xxl-5 col-xl-5  col-lg-5 col-md-6">
+          <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-6">
             <div className="contact__item text-center mb-30 transition-3 white-bg">
               <div className="contact__icon d-flex justify-content-center align-items-end">
                 <svg viewBox="0 0 24 24">
@@ -62,13 +60,12 @@ const ContactContent = () => {
                 </svg>
               </div>
               <div className="contact__content">
-                <h3 className="contact__title">Online Support</h3>
+                <h3 className="contact__title">Get in Touch</h3>
                 <p>
-                  My good sir plastered cuppa barney cobblers mush argy bargy
-                  ruddy.
+                  Admission, course details ya job support se judi queries ke liye humse direct baat karein.
                 </p>
-                <Link href="/" className="e-btn e-btn-border">
-                  Send a Ticket
+                <Link href="/contact" className="e-btn e-btn-border">
+                  Contact Support
                 </Link>
               </div>
             </div>

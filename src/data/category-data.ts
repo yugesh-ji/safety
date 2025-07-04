@@ -9,60 +9,64 @@ import CategoryIconSix from "@/svg/category-icon-six";
 import CategotyIconThere from "@/svg/category-icon-there";
 import CategoryIconTwo from "@/svg/category-icon-two";
 
+
 const category_data: categoryType[] = [
   {
     id: 1,
     icon: CategoryIconOne,
-    title: "Data Science",
-    desc: "Data is Everything",
+    title: "Diploma Courses",
+    desc: "DCA, ADCA, DFA, ADFA",
   },
   {
     id: 2,
     icon: CategoryIconTwo,
-    title: "Business",
-    desc: "Improve your business",
+    title: "Accounting",
+    desc: "Tally with GST, Payroll",
   },
   {
     id: 3,
     icon: CategotyIconThere,
-    title: "Art & Design",
-    desc: "Fun & Challenging",
+    title: "Design",
+    desc: "Graphics, Photoshop, CorelDRAW",
   },
   {
     id: 4,
     icon: CategoryIconFour,
-    title: "Lifestyle",
-    desc: "New Skills, New You",
+    title: "Development",
+    desc: "Web & App Development",
   },
   {
     id: 5,
     icon: CategoryIconFive,
-    title: "Marketing",
-    desc: "Improve your business",
+    title: "Programming",
+    desc: "Python, Java, C, C++",
   },
   {
     id: 6,
     icon: CategoryIconSix,
-    title: "Finance",
-    desc: "Fun & Challenging",
+    title: "Digital Marketing",
+    desc: "SEO, Social Media, Ads",
   },
   {
     id: 7,
     icon: CategoryIconSeven,
-    title: "Health & Fitness",
-    desc: "Invest to Your Body",
+    title: "Computer Basics",
+    desc: "MS Office, Internet, Typing",
   },
   {
     id: 8,
     icon: CategoryIconEight,
-    title: "Music",
-    desc: "Major or Minor",
+    title: "English Spoken",
+    desc: "Grammar, Practice, Fluency",
   },
   {
     id: 9,
     icon: CategoryIconNine,
-    title: "Academics",
-    desc: "High Education Level",
+    title: "Advanced Courses",
+    desc: "O Level, A Level, AI Tools",
   },
 ];
+
 export default category_data;
+
+

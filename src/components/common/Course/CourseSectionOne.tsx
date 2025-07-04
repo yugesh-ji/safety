@@ -19,23 +19,23 @@ const CourseSectionOne = ({ courseTitle }: any) => {
           <div className="col-xxl-5 col-xl-6 col-lg-6">
             <div className="section__title-wrapper mb-60">
               <h2 className="section__title">
-                Find the Right <br /> Online{" "}
+                Build Your Career with <br />
                 <span className="yellow-bg yellow-bg-big">
-                  Course
+                  Certified Courses
                   <Image
                     src={YellowBg}
                     style={{ width: "auto", height: "auto" }}
                     alt="image not found"
                   />
                 </span>{" "}
-                for you
+                at RAIT
               </h2>
               <p>
-                You {`don't`} have to struggle alone, {`you've`} got our
-                assistance and help.
+                Government-Recognized. Job-Focused. Powered by Practical Learning — Only at Rashm Academy of Information Technology.
               </p>
             </div>
           </div>
+
           <div className="col-xxl-7 col-xl-6 col-lg-6">
             <div className="portfolio-button mb-60">
               <div className="masonary-menu filter-button-group">

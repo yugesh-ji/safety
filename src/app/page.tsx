@@ -1,5 +1,5 @@
 //@refresh
-import HomeMain from "@/components/home/HomeMain";
+import HomeTwoMain from "@/components/home-two/HomeTwoMain";
 import Wrapper from "@/layout/DefaultWrapper";
 
 const  Home = () => {
@@ -7,7 +7,7 @@ const  Home = () => {
     <>
       <Wrapper>
         <main>
-          <HomeMain/>
+          <HomeTwoMain/>
         </main>
       </Wrapper>
     </>

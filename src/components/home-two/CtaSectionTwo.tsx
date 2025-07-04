@@ -25,19 +25,19 @@ const CtaSectionTwo = () => {
             </div>
             <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-6">
               <div className="cta__apps d-lg-flex justify-content-end p-relative z-index-1">
-                <Link
+                {/* <Link
                   target="_blank"
                   href="https://www.apple.com/app-store/"
                   className="mr-10"
                 >
                   <i className="fab fa-apple"></i> Apple Store
-                </Link>
+                </Link> */}
                 <Link
                   target="_blank"
-                  href="https://play.google.com/store/apps"
+                  href="/contact"
                   className="active"
                 >
-                  <i className="fab fa-google-play"></i> Play Store
+                  <i className="fab fa-google-play"></i> Play Store App Coming Soon
                 </Link>
               </div>
             </div>

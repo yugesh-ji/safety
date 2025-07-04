@@ -21,9 +21,9 @@ const ContactMain = () => {
               <div className="contact__wrapper">
                 <div className="section__title-wrapper mb-40">
                   <h2 className="section__title">
-                    Get in {" "}
+                    Get in{" "}
                     <span className="yellow-bg yellow-bg-big">
-                       touch
+                      touch
                       <Image
                         src={YellowBg}
                         style={{ width: "auto", height: "auto" }}
@@ -77,13 +77,17 @@ const ContactMain = () => {
                           </svg>
                         </div>
                         <div className="contact__info-text">
-                          <h4>New York Office</h4>
+                          <h4>Gorakhpur Head Office</h4>
                           <p>
                             <Link
                               target="_blank"
-                              href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873"
+                              href="https://www.google.com/maps/place/Taramandal+Rd,+behind+GDA+office,+Rail+Vihar+Colony+Phase+3rd,+Taramandal,+Gorakhpur,+Uttar+Pradesh+273017"
                             >
-                              Maypole Crescent 70-80 Upper St Norwich NR2 1LT
+                              Taramandal Rd, behind GDA office,
+                              <br />
+                              Rail Vihar Colony Phase 3rd,
+                              <br />
+                              Taramandal, Gorakhpur, Uttar Pradesh 273017
                             </Link>
                           </p>
                         </div>
@@ -107,13 +111,12 @@ const ContactMain = () => {
                           <h4>Email us directly</h4>
                           <p>
                             <Link href="mailto:support@educal.com">
-                              support@educal.com
+                              rait.rashmgroup@gmail.com
                             </Link>
                           </p>
                           <p>
                             <Link href="mailto:info@educal.com">
-                              {" "}
-                              info@educal.com
+                              support@rashmgroup.com
                             </Link>
                           </p>
                         </div>
@@ -128,7 +131,7 @@ const ContactMain = () => {
                     <ul>
                       <li>
                         <Link
-                          href="https://www.facebook.com/"
+                          href="https://www.facebook.com/profile.php?id=61577995044129"
                           target="_blank"
                           className="fb"
                         >
@@ -137,20 +140,22 @@ const ContactMain = () => {
                       </li>
                       <li>
                         <Link
-                          href="https://twitter.com/"
+                          href="https://www.instagram.com/rait.rashmgroup/"
                           target="_blank"
                           className="tw"
                         >
-                          <i className="fab fa-twitter"></i>
+                          <i className="fab fa-instagram"></i>
                         </Link>
+                        
                       </li>
+                      
                       <li>
-                        <Link
-                          href="https://www.pinterest.com/"
+                      <Link
+                          href="https://www.linkedin.com/company/rait-rashmgroup"
                           target="_blank"
-                          className="pin"
+                          className="tw"
                         >
-                          <i className="fa-brands fa-pinterest-p"></i>
+                          <i className="fab fa-linkedin"></i>
                         </Link>
                       </li>
                     </ul>

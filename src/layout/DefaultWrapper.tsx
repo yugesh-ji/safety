@@ -33,7 +33,7 @@ const Wrapper: React.FC<WrapperProps> = ({ children }) => {
       {(() => {
         switch (pathName) {
           case "/":
-            return <HeaderOne />;
+            return <HeaderTwo />;
           case "/home-2":
             return <HeaderTwo />;
           case "/home-3":

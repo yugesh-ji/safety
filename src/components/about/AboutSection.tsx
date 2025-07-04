@@ -19,21 +19,21 @@ const AboutSection = () => {
               <div className="edu-about">
                 <h5>
                   {" "}
-                  <span>8,200+</span> five ster reviews
+                  <span>10,000+</span> Students Trained
                 </h5>
               </div>
               <div className="edu__thumb ml-100">
                 <Image
                   src={AboutImage}
                   style={{ width: "100%", height: "auto" }}
-                  alt="img not found"
+                  alt="Rashm Academy - Students"
                 />
               </div>
               <div className="about__banner educal_banner mt--210">
                 <Image
                   src={AboutBanner}
                   style={{ width: "100%", height: "auto" }}
-                  alt="img not found"
+                  alt="Rashm Academy - Campus"
                 />
               </div>
               <div className="about__student ml-270 mt--80">
@@ -41,70 +41,70 @@ const AboutSection = () => {
                   <Image
                     src={studentImgOne}
                     style={{ width: "auto", height: "auto" }}
-                    alt="img not found"
+                    alt="Student 1"
                   />
                   <Image
                     src={studentImgTwo}
                     style={{ width: "auto", height: "auto" }}
-                    alt="img not found"
+                    alt="Student 2"
                   />
                   <Image
                     src={studentImgThree}
                     style={{ width: "auto", height: "auto" }}
-                    alt="img not found"
+                    alt="Student 3"
                   />
                   <Image
                     src={studentImgFour}
                     style={{ width: "auto", height: "auto" }}
-                    alt="img not found"
+                    alt="Student 4"
                   />
                 </Link>
                 <p>
-                  Join over <span>4,000+</span> students
+                  Join over <span>4,000+</span> students building their careers
                 </p>
               </div>
             </div>
           </div>
+
           <div className="col-xxl-6 col-xl-6 col-lg-6">
             <div className="about__content pl-70 pr-60 pt-25">
               <div className="section__title-wrapper mb-25">
                 <h2 className="section__title">
-                  Achieve your <br />
+                  Your Goals. <br />
                   <span className="yellow-bg-big">
-                    Goals{" "}
+                    Our Mission{" "}
                     <Image
                       src={YellowBg}
                       style={{ width: "auto", height: "auto" }}
-                      alt="img not found"
+                      alt="highlight background"
                     />
                   </span>{" "}
-                  with Educal{" "}
+                  Powered by RAIT
                 </h2>
+
                 <p>
-                  Lost the plot bobby such a fibber bleeding bits and bobs{" "}
-                  {`don't`} get shirty with me bugger all mate chinwag super
-                  pukka william barney, horse play buggered.
+                  At Rashm Academy of Information Technology, we don’t just teach — we transform careers.
+                  With Government-certified courses, 100% job assistance, and practical training,
+                  we help you build a future in Computer, IT, AI, and Digital Skills.
                 </p>
               </div>
+
               <div className="about__list mb-35">
                 <ul>
                   <li className="d-flex align-items-center">
-                    {" "}
-                    <i className="fas fa-check"></i> Upskill your organization.
+                    <i className="fas fa-check"></i> Govt. Certified & Job-Oriented Courses
                   </li>
                   <li className="d-flex align-items-center">
-                    {" "}
-                    <i className="fas fa-check"></i> Access more then 100K
-                    online courses
+                    <i className="fas fa-check"></i> 100% Job Assistance After Course Completion
                   </li>
                   <li className="d-flex align-items-center">
-                    {" "}
-                    <i className="fas fa-check"></i> Learn the latest skills
+                    <i className="fas fa-check"></i> Practical & Project-Based Learning Environment
                   </li>
                 </ul>
               </div>
+
               <Link href="/contact" className="e-btn e-btn-border">
-                apply now
+                Enroll Now
               </Link>
             </div>
           </div>

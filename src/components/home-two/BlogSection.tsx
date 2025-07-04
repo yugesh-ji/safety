@@ -12,25 +12,26 @@ const BlogSection = () => {
           <div className="col-xxl-6 offset-xxl-3">
             <div className="section__title-wrapper text-center mb-60">
               <h2 className="section__title">
-                We share <br />
-                Our{" "}
+                RAIT shares <br />
+                Valuable{" "}
                 <span className="yellow-bg yellow-bg-big">
-                  thoughts{" "}
+                  insights{" "}
                   <Image
                     src={YellowBg}
                     style={{ width: "auto", height: "auto" }}
                     alt="yellow-shape"
                   />
                 </span>
-                on design
+                with you
               </h2>
               <p>
-                You {`don't`} have to struggle alone, {`you've`} got our
-                assistance and help.
+                Stay updated with career tips, IT knowledge, and digital skills.
+                Learn from our expert trainers and grow with us.
               </p>
             </div>
           </div>
         </div>
+
         <div className="row">
           {blog_data.slice(0, 3).map((item) => (
             <div key={item.id} className="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
@@ -40,16 +41,17 @@ const BlogSection = () => {
                     <Image
                       src={item.image}
                       style={{ width: "100%", height: "auto" }}
-                      alt="img not found"
+                      alt={item.title}
                     />
                   </Link>
                 </div>
+
                 <div className="blog__content">
                   <div className="blog__tag">
                     <Link
                       href={`/blog-details/${item.id}`}
                       className={
-                        item.blogWrapperClass ? `${item.blogWrapperClass}` : ""
+                        item.blogWrapperClass ? item.blogWrapperClass : ""
                       }
                     >
                       {item.blogTag}
@@ -64,7 +66,7 @@ const BlogSection = () => {
                         <Image
                           src={item.authorImg}
                           style={{ width: "auto", height: "auto" }}
-                          alt="img not found"
+                          alt={item.author}
                         />
                       </div>
                       <div className="blog__author-info">

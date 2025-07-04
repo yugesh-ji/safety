@@ -12,6 +12,7 @@ const Footer = () => {
           <div className="footer__top pt-190 pb-40">
             <div className="container">
               <div className="row">
+                {/* RAIT Logo & About */}
                 <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
                   <div className="footer__widget mb-50">
                     <div className="footer__widget-head mb-22">
@@ -20,35 +21,33 @@ const Footer = () => {
                           <Image
                             src={FooterLogo}
                             style={{ width: "auto", height: "auto" }}
-                            alt="img not found"
+                            alt="RAIT Logo"
                           />
                         </Link>
                       </div>
                     </div>
                     <div className="footer__widget-body">
                       <p>
-                        Great lesson ideas and lesson plans for ESL teachers!
-                        Educators can customize lesson plans to best.
+                        RAIT is the most trusted computer institute in
+                        Gorakhpur. We offer job-oriented courses in Web Design,
+                        Tally, Graphic Design, MS Office, and Spoken English.
                       </p>
 
                       <div className="footer__social">
                         <ul>
                           <li>
-                            <Link href="https://www.facebook.com/">
+                            <Link href="https://www.facebook.com/profile.php?id=61577995044129" target="_blank">
                               <i className="fab fa-facebook-f"></i>
                             </Link>
                           </li>
                           <li>
-                            <Link href="https://twitter.com/" className="tw">
-                              <i className="fab fa-twitter"></i>
+                            <Link href="https://www.instagram.com/rait.rashmgroup/" target="_blank" className="tw">
+                              <i className="fab fa-instagram"></i>
                             </Link>
                           </li>
                           <li>
-                            <Link
-                              href="https://www.pinterest.com/"
-                              className="pin"
-                            >
-                              <i className="fab fa-pinterest-p"></i>
+                            <Link href="https://www.youtube.com@rait.rashmgroup" target="_blank" className="pin">
+                              <i className="fab fa-youtube"></i>
                             </Link>
                           </li>
                         </ul>
@@ -56,75 +55,54 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-xxl-2 offset-xxl-1 col-xl-2 offset-xl-1 col-lg-3 offset-lg-0 col-md-2 offset-md-1 col-sm-5 offset-sm-1">
+
+                {/* Quick Links - Company */}
+                <div className="col-xxl-2 offset-xxl-1 col-xl-2 offset-xl-1 col-lg-3 col-md-2 col-sm-5">
                   <div className="footer__widget mb-50">
                     <div className="footer__widget-head mb-22">
-                      <h3 className="footer__widget-title">Company</h3>
+                      <h3 className="footer__widget-title">Institute</h3>
                     </div>
                     <div className="footer__widget-body">
                       <div className="footer__link">
                         <ul>
-                          <li>
-                            <Link href="/about">About</Link>
-                          </li>
-                          <li>
-                            <Link href="/course-grid">Courses</Link>
-                          </li>
-                          <li>
-                            <Link href="/event-details">Events</Link>
-                          </li>
-                          <li>
-                            <Link href="/instructor">Instructor</Link>
-                          </li>
-                          <li>
-                            <Link href="/instructor">Career</Link>
-                          </li>
-                          <li>
-                            <Link href="/instructor">Become a Teacher</Link>
-                          </li>
-                          <li>
-                            <Link href="/contact">Contact</Link>
-                          </li>
+                          <li><Link href="/about">About RAIT</Link></li>
+                          <li><Link href="/course-grid">Our Courses</Link></li>
+                          <li><Link href="/contact">Contact Us</Link></li>
+                          <li><Link href="/instructor">Our Faculty</Link></li>
+                          {/* <li><Link href="/career">Career With Us</Link></li> */}
+                          <li><Link href="/admission">Admissions</Link></li>
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="col-xxl-2 col-xl-2 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-6">
+
+                {/* Platform */}
+                <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-6">
                   <div className="footer__widget mb-50">
                     <div className="footer__widget-head mb-22">
-                      <h3 className="footer__widget-title">Platform</h3>
+                      <h3 className="footer__widget-title">Programs</h3>
                     </div>
                     <div className="footer__widget-body">
                       <div className="footer__link">
                         <ul>
-                          <li>
-                            <Link href="/instructor">Browse Library</Link>
-                          </li>
-                          <li>
-                            <Link href="/instructor">Library</Link>
-                          </li>
-                          <li>
-                            <Link href="/instructor">Partners</Link>
-                          </li>
-                          <li>
-                            <Link href="/blog">News & Blogs</Link>
-                          </li>
-                          <li>
-                            <Link href="/about">FAQs</Link>
-                          </li>
-                          <li>
-                            <Link href="/course-grid">Tutorials</Link>
-                          </li>
+                          <li><Link href="/course-grid">Web Design</Link></li>
+                          <li><Link href="/course-grid">Tally with GST</Link></li>
+                          <li><Link href="/course-grid">Graphic Design</Link></li>
+                          <li><Link href="/course-grid">Spoken English</Link></li>
+                          <li><Link href="/course-grid">Advanced Excel</Link></li>
+                          <li><Link href="/blog">Latest News</Link></li>
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                {/* Newsletter */}
                 <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-5 col-sm-6">
                   <div className="footer__widget footer__pl-70 mb-50">
                     <div className="footer__widget-head mb-22">
-                      <h3 className="footer__widget-title">Subscribe</h3>
+                      <h3 className="footer__widget-title">Newsletter</h3>
                     </div>
                     <div className="footer__widget-body">
                       <div className="footer__subscribe">
@@ -141,7 +119,8 @@ const Footer = () => {
                           </div>
                         </form>
                         <p>
-                          Get the latest news and updates right at your inbox.
+                          Subscribe to receive updates on admissions, new
+                          batches, and skill tips.
                         </p>
                       </div>
                     </div>

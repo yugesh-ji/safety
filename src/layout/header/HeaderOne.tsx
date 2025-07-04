@@ -44,7 +44,7 @@ const HeaderOne = () => {
                       />
                     </Link>
                   </div>
-                  <HeaderCategory />
+                  {/* <HeaderCategory /> */}
                 </div>
               </div>
               <div className="col-xxl-9 col-xl-9 col-lg-8 col-md-10 col-sm-8 col-6">

@@ -19,8 +19,8 @@ const CopyrightArea = ({ wrapperClass, footerClass }: any) => {
               }
             >
               <p>
-                © 2023 Educal, All Rights Reserved. Design By{" "}
-                <Link href="/">Theme Pure</Link>
+                © 2025 RAIT, All Rights Reserved. Design By{" "}
+                <Link href="www.biproconnect.com">Business Promoters</Link>
               </p>
             </div>
           </div>

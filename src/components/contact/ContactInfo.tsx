@@ -15,10 +15,10 @@ const ContactInfo = () => {
       <div className="contact__info-text">
         <h4>Phone</h4>
         <p>
-          <Link href="tel:+(426)-742-26-44">+(426) 742 26 44</Link>
+          <Link href="tel:+(91) 8005150064">+(91) 8005150064</Link>
         </p>
         <p>
-          <Link href="tel:+(224)-762-442-32">+(224) 762 442 32</Link>
+          <Link href="tel:+(91)8127483964">+(91) 8127483964</Link>
         </p>
       </div>
     </div>

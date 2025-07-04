@@ -24,14 +24,12 @@ const SkillineSection = () => {
                 </span>
               </h2>
               <p>
-                Sloshed faff about me old mucker blatant bubble and squeak hanky
-                panky some dodgy chav bevvy arse chimney pot I, ruddy plastered
-                buggered smashing blow off {`I'm`} telling up the kyver he
-                legged it bleeder jolly good,{" "}
+                Skilline is RAIT's future-ready tech learning platform that empowers students with in-demand Computer & IT skills — all backed by lifetime tech support and 100% Job Assistance.
               </p>
             </div>
           </div>
         </div>
+
         <div className="row">
           <div className="col-xxl-5 offset-xl-1 col-xl-5 offset-xl-1 col-lg-6">
             <div className="what__item transition-3 mb-30 p-relative fix">
@@ -44,14 +42,15 @@ const SkillineSection = () => {
               </div>
               <div className="what__content p-absolute text-center">
                 <h3 className="what__title white-color">
-                  Mostly <br /> Online Learning
+                  Learn<br /> In-Demand Skills
                 </h3>
                 <Link href="/course-grid" className="e-btn e-btn-border-2">
-                  Start a class today
+                  Explore Courses
                 </Link>
               </div>
             </div>
           </div>
+
           <div className="col-xxl-5 col-xl-5 col-lg-6">
             <div className="what__item transition-3 mb-30 p-relative fix">
               <div className="what__thumb w-img">
@@ -63,10 +62,10 @@ const SkillineSection = () => {
               </div>
               <div className="what__content p-absolute text-center">
                 <h3 className="what__title white-color">
-                  Become <br /> an Instructor
+                  Become a<br /> Certified Job Ready Candidate
                 </h3>
                 <Link href="/instructor" className="e-btn e-btn-border-2">
-                  Start teaching
+                  Join as Candidate
                 </Link>
               </div>
             </div>

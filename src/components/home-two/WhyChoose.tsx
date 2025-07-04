@@ -16,28 +16,28 @@ const WhyChoose = () => {
           <div className="col-xxl-5 offset-xxl-1 col-xl-5 offset-xl-1 col-lg-6 col-md-8">
             <div className="why__content pr-50 mt-40">
               <div className="section__title-wrapper mb-30">
-                <span className="section__sub-title">Why Choses Me</span>
+                <span className="section__sub-title">Why Choose RAIT</span>
                 <h2 className="section__title">
-                  Tools for{" "}
+                  Powerful Tools for{" "}
                   <span className="yellow-bg yellow-bg-big">
-                    Teachers{" "}
+                    Students{" "}
                     <Image
                       src={YellowImg}
                       style={{ width: "auto", height: "auto" }}
                       alt="img not found"
                     />
                   </span>{" "}
-                  and Learners
+                  and Educators
                 </h2>
                 <p>
-                  Oxford chimney pot Eaton faff about blower blatant brilliant,
-                  bubble and squeak he legged it Charles bonnet arse at public
-                  school bamboozled.
+                  RAIT offers industry-relevant computer courses, practical labs,
+                  and job-ready training — all backed by lifetime tech support
+                  and dedicated faculty. Learn. Practice. Get Placed.
                 </p>
               </div>
               <div className="why__btn">
                 <Link href="/contact" className="e-btn e-btn-3 mr-30">
-                  Join for Free
+                  Join Now
                 </Link>
 
                 <Link href="/about" className="link-btn">

@@ -60,7 +60,7 @@ const HeaderTwo = () => {
                                 Web Development
                               </Link>
                             </li>
-                            <li>
+                            {/* <li>
                               <Link href="/course-details">Logo Design</Link>
                             </li>
                             <li>
@@ -70,7 +70,7 @@ const HeaderTwo = () => {
                             </li>
                             <li>
                               <Link href="/course-details">Video Edition</Link>
-                            </li>
+                            </li> */}
                           </ul>
                         </li>
                       </ul>

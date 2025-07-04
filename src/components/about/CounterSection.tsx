@@ -17,8 +17,8 @@ const CounterSection = () => {
         "col-xxl-2 offset-xxl-1 col-xl-2 offset-xl-1 col-lg-3 col-md-3 offset-md-0 col-sm-5 offset-sm-2",
       counterItemClass: "counter__item mb-30",
       counterIconClass: "counter__icon user mb-15",
-      countNum: 345421,
-      countTitle: "Students Enrolled",
+      countNum: 15450,
+      countTitle: "Students Trained",
       countPlus: "+",
     },
     {
@@ -27,8 +27,8 @@ const CounterSection = () => {
       wrapperClass: "col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-5",
       counterItemClass: "counter__item counter__pl-80 mb-30",
       counterIconClass: "counter__icon book mb-15",
-      countNum: 2485,
-      countTitle: "Total Courses",
+      countNum: 38,
+      countTitle: "Courses Offered",
       countPlus: "+",
     },
     {
@@ -38,8 +38,8 @@ const CounterSection = () => {
         "col-xxl-2 offset-xxl-0 col-xl-3 offset-xl-0 col-lg-3 offset-lg-0 col-md-3 offset-md-0 col-sm-5 offset-sm-2",
       counterItemClass: "counter__item counter__pl-34 mb-30",
       counterIconClass: "counter__icon graduate mb-15",
-      countNum: 24085,
-      countTitle: "Online Learners",
+      countNum: 8000,
+      countTitle: "Job Placements",
       countPlus: "+",
     },
     {
@@ -49,11 +49,12 @@ const CounterSection = () => {
         "col-xxl-2 offset-xxl-1 col-xl-3 col-lg-3 col-md-3 col-sm-5",
       counterItemClass: "counter__item mb-30",
       counterIconClass: "counter__icon globe mb-15",
-      countNum: 2020,
-      countTitle: "Foreign Followers",
+      countNum: 120,
+      countTitle: "Corporate Clients",
       countPlus: "+",
     },
   ];
+
   return (
     <section className="counter__area pt-145 pb-100">
       <div className="container">
@@ -61,7 +62,7 @@ const CounterSection = () => {
           <div className="col-xxl-6 offset-xl-3 col-xl-6 offset-xl-3">
             <div className="section__title-wrapper text-center mb-60">
               <h2 className="section__title">
-                We are{" "}
+                RAIT is{" "}
                 <span className="yellow-bg yellow-bg-big">
                   Proud
                   <Image
@@ -72,8 +73,7 @@ const CounterSection = () => {
                 </span>
               </h2>
               <p>
-                You {`don't`} have to struggle alone, {`you've`} got our
-                assistance and help.
+                Join the thousands of learners who trust RAIT for quality computer education and guaranteed skill growth.
               </p>
             </div>
           </div>
@@ -88,10 +88,11 @@ const CounterSection = () => {
                 <div className="counter__content">
                   <h4>
                     <span className="counter">
-                      <CountUpContent number={item.countNum}></CountUpContent>{" "}
+                      <CountUpContent number={item.countNum}></CountUpContent>
                     </span>
+                    {item.countPlus}
                   </h4>
-                  <p>Students Enrolled</p>
+                  <p>{item.countTitle}</p>
                 </div>
               </div>
             </div>

@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import courses_data from "@/data/courses-data";
 import Image from "next/image";
@@ -8,41 +9,48 @@ import CourseGridIconOne from "@/svg/course-grid-icon-one";
 import CourseGridIconTwo from "@/svg/course-grid-icon-two";
 
 const CourseListMain = () => {
+  const coursesPerPage = 6; // Change as needed
+  const [currentPage, setCurrentPage] = useState(1);
+  const [activeTab, setActiveTab] = useState<"grid" | "list">("list");
+
+  const totalCourses = courses_data.length;
+  const totalPages = Math.ceil(totalCourses / coursesPerPage);
+
+  const startIndex = (currentPage - 1) * coursesPerPage;
+  const endIndex = startIndex + coursesPerPage;
+  const currentCourses = courses_data.slice(startIndex, endIndex);
+
+  const handleTabChange = (tab: "grid" | "list") => {
+    setActiveTab(tab);
+  };
+
   return (
     <>
       <Breadcrumb title="Courses" subTitle="Courses" />
+
       <section className="course__area pt-120 pb-120">
         <div className="container">
+          {/* Tab Navigation */}
           <div className="course__tab-inner grey-bg-2 mb-50">
             <div className="row align-items-center">
               <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                 <div className="course__tab-wrapper d-flex align-items-center">
                   <div className="course__tab-btn">
-                    <ul className="nav nav-tabs" id="courseTab" role="tablist">
+                    <ul className="nav nav-tabs" role="tablist">
                       <li className="nav-item" role="presentation">
                         <button
-                          className="nav-link"
-                          id="grid-tab"
-                          data-bs-toggle="tab"
-                          data-bs-target="#grid"
+                          className={`nav-link ${activeTab === "grid" ? "active" : ""}`}
+                          onClick={() => handleTabChange("grid")}
                           type="button"
-                          role="tab"
-                          aria-controls="grid"
-                          aria-selected="true"
                         >
                           <CourseGridIconOne />
                         </button>
                       </li>
                       <li className="nav-item" role="presentation">
                         <button
-                          className="nav-link list active"
-                          id="list-tab"
-                          data-bs-toggle="tab"
-                          data-bs-target="#list"
+                          className={`nav-link list ${activeTab === "list" ? "active" : ""}`}
+                          onClick={() => handleTabChange("list")}
                           type="button"
-                          role="tab"
-                          aria-controls="list"
-                          aria-selected="false"
                         >
                           <CourseGridIconTwo />
                         </button>
@@ -50,287 +58,149 @@ const CourseListMain = () => {
                     </ul>
                   </div>
                   <div className="course__view">
-                    <h4>Showing 1 - 9 of 84</h4>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                <div className="course__sort d-flex justify-content-sm-end">
-                  <div className="course__sort-inner">
-                    <select>
-                      <option>Default</option>
-                      <option>Option 1</option>
-                      <option>Option 2</option>
-                      <option>Option 3</option>
-                      <option>Option 4</option>
-                      <option>Option 5</option>
-                      <option>Option 6</option>
-                    </select>
+                    <h4>
+                      Showing {startIndex + 1} - {Math.min(endIndex, totalCourses)} of {totalCourses}
+                    </h4>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          {/* Courses */}
           <div className="row">
             <div className="col-xxl-12">
               <div className="course__tab-conent">
-                <div className="tab-content" id="courseTabContent">
-                  <div
-                    className="tab-pane fade"
-                    id="grid"
-                    role="tabpanel"
-                    aria-labelledby="grid-tab"
-                  >
-                    <div className="row">
-                      {courses_data.slice(8, 17).map((item) => (
-                        <div
-                          key={item.id}
-                          className="col-xxl-4 col-xl-4 col-lg-4 col-md-6"
-                        >
-                          <div className="course__item white-bg mb-30 fix">
-                            <div className="course__thumb w-img p-relative fix">
-                              <Link href={`/course-details/${item.id}`}>
-                                <Image
-                                  src={item.image}
-                                  style={{ width: "100%", height: "auto" }}
-                                  alt="image not found"
-                                />
+                {activeTab === "grid" ? (
+                  <div className="row">
+                    {currentCourses.map((item) => (
+                      <div key={item.id} className="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                        {/* Course Grid Card */}
+                        <div className="course__item white-bg mb-30 fix">
+                          <div className="course__thumb w-img p-relative fix">
+                            <Link href={`/course-details/${item.id}`}>
+                              <Image src={item.image} alt="course" style={{ width: "100%", height: "auto" }} />
+                            </Link>
+                            <div className="course__tag">
+                              <Link href={`/course-details/${item.id}`} className={item.categoryClass || ""}>
+                                {item.category}
                               </Link>
-                              <div className="course__tag">
-                                <Link
-                                  href={`/course-details/${item.id}`}
-                                  className={
-                                    item.categoryClass
-                                      ? `${item.categoryClass}`
-                                      : ""
-                                  }
-                                >
-                                  {item.category}
-                                </Link>
-                              </div>
                             </div>
-                            <div className="course__content">
-                              <div className="course__meta d-flex align-items-center justify-content-between">
-                                <div className="course__lesson">
-                                  <span>
-                                    <i className="far fa-book-alt"></i>
-                                    {item.lesson} Lesson
-                                  </span>
-                                </div>
-                                <div className="course__rating">
-                                  <span>
-                                    <i className="fas fa-star"></i>
-                                    {item.ratingAve} ({item.ratingCount})
-                                  </span>
-                                </div>
+                          </div>
+                          <div className="course__content">
+                            <h3 className="course__title">
+                              <Link href={`/course-details/${item.id}`}>{item.title}</Link>
+                            </h3>
+                            <div className="course__teacher d-flex align-items-center">
+                              <div className="course__teacher-thumb mr-15">
+                                <Image src={item.tutorImg} alt="teacher" style={{ width: "auto", height: "auto" }} />
                               </div>
-                              <h3 className="course__title">
+                              <h6>{item.author}</h6>
+                            </div>
+                          </div>
+                          <div className="course__more d-flex justify-content-between align-items-center">
+                            <div className="course__status">
+                              <span className={item.priceClass || ""}>
+                                {item.price === 0 ? "FREE" : `$${item.price}`}
+                              </span>
+                              <span className="old-price">
+                                {item.oldPrice !== 0 ? `$${item.oldPrice}` : ""}
+                              </span>
+                            </div>
+                            <div className="course__btn">
+                              <Link href={`/course-details/${item.id}`} className="link-btn">
+                                Know Details
+                                <i className="far fa-arrow-right"></i>
+                                <i className="far fa-arrow-right"></i>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="row">
+                    {currentCourses.map((item) => (
+                      <div key={item.id} className="col-xxl-12">
+                        {/* Course List Card */}
+                        <div className="course__item white-bg mb-30 fix">
+                          <div className="row gx-0">
+                            <div className="col-xxl-4 col-xl-4 col-lg-4">
+                              <div className="course__thumb course__thumb-list w-img p-relative fix">
                                 <Link href={`/course-details/${item.id}`}>
-                                  {item.title}
-                                </Link>
-                              </h3>
-                              <div className="course__teacher d-flex align-items-center">
-                                <div className="course__teacher-thumb mr-15">
-                                  <Image
-                                    src={item.tutorImg}
-                                    style={{ width: "auto", height: "auto" }}
-                                    alt="image not found"
-                                  />
-                                </div>
-                                <h6>
-                                  <Link href="/instructor-details">
-                                    {item.author}
-                                  </Link>
-                                </h6>
-                              </div>
-                            </div>
-                            <div className="course__more d-flex justify-content-between align-items-center">
-                              <div className="course__status">
-                                <span
-                                  className={
-                                    item.priceClass ? `${item.priceClass}` : ""
-                                  }
-                                >
-                                  {item.price === 0
-                                    ? "FREE"
-                                    : `$${item.price}.00`}
-                                </span>
-                                <span className="old-price">
-                                  {item.oldPrice === 0
-                                    ? " "
-                                    : `$${item.oldPrice}.00`}
-                                </span>
-                              </div>
-                              <div className="course__btn">
-                                <Link
-                                  href={`/course-details/${item.id}`}
-                                  className="link-btn"
-                                >
-                                  Know Details
-                                  <i className="far fa-arrow-right"></i>
-                                  <i className="far fa-arrow-right"></i>
+                                  <Image src={item.image} alt="course" style={{ width: "100%", height: "auto" }} />
                                 </Link>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  <div
-                    className="tab-pane fade show active"
-                    id="list"
-                    role="tabpanel"
-                    aria-labelledby="list-tab"
-                  >
-                    <div className="row">
-                      {courses_data.slice(17, 23).map((item) => (
-                        <div key={item.id} className="col-xxl-12">
-                          <div className="course__item white-bg mb-30 fix">
-                            <div className="row gx-0">
-                              <div className="col-xxl-4 col-xl-4 col-lg-4">
-                                <div className="course__thumb course__thumb-list w-img p-relative fix">
-                                  <Link href={`/course-details/${item.id}`}>
-                                    <Image
-                                      src={item.image}
-                                      style={{ width: "100%", height: "auto" }}
-                                      alt="image not found"
-                                    />
-                                  </Link>
-                                  <div className="course__tag">
-                                    <Link
-                                      href={`/course-details/${item.id}`}
-                                      className={
-                                        item.categoryClass
-                                          ? `${item.categoryClass}`
-                                          : ""
-                                      }
-                                    >
-                                      {item.category}
-                                    </Link>
+                            <div className="col-xxl-8 col-xl-8 col-lg-8">
+                              <div className="course__content course__content-3">
+                                <h3 className="course__title course__title-3">
+                                  <Link href={`/course-details/${item.id}`}>{item.title}</Link>
+                                </h3>
+                                <p>{item.desc}</p>
+                                <div className="course__teacher d-flex align-items-center">
+                                  <div className="course__teacher-thumb mr-15">
+                                    <Image src={item.tutorImg} alt="teacher" style={{ width: "auto", height: "auto" }} />
                                   </div>
+                                  <h6>{item.author}</h6>
                                 </div>
                               </div>
-                              <div className="col-xxl-8 col-xl-8 col-lg-8">
-                                <div className="course__right">
-                                  <div className="course__content course__content-3">
-                                    <div className="course__meta d-flex align-items-center">
-                                      <div className="course__lesson mr-20">
-                                        <span>
-                                          <i className="far fa-book-alt"></i>
-                                          {item.lesson} Lesson
-                                        </span>
-                                      </div>
-                                      <div className="course__rating">
-                                        <span>
-                                          <i className="fas fa-star"></i>
-                                          {item.ratingAve} ({item.ratingCount})
-                                        </span>
-                                      </div>
-                                    </div>
-                                    <h3 className="course__title course__title-3">
-                                      <Link href={`/course-details/${item.id}`}>
-                                        {item.title}
-                                      </Link>
-                                    </h3>
-                                    <div className="course__summary">
-                                      <p>{item.desc}</p>
-                                    </div>
-                                    <div className="course__teacher d-flex align-items-center">
-                                      <div className="course__teacher-thumb mr-15">
-                                        <Image
-                                          src={item.tutorImg}
-                                          style={{
-                                            width: "auto",
-                                            height: "auto",
-                                          }}
-                                          alt="image not found"
-                                        />
-                                      </div>
-                                      <h6>
-                                        <Link href="/instructor-details">
-                                          {item.author}
-                                        </Link>
-                                      </h6>
-                                    </div>
-                                  </div>
-                                  <div className="course__more course__more-2 d-flex justify-content-between align-items-center">
-                                    <div className="course__status">
-                                      <span
-                                        className={
-                                          item.priceClass
-                                            ? `${item.priceClass}`
-                                            : ""
-                                        }
-                                      >
-                                        {item.price === 0
-                                          ? "FREE"
-                                          : `$${item.price}.00`}
-                                      </span>
-                                      <span className="old-price">
-                                        {item.oldPrice === 0
-                                          ? " "
-                                          : `$${item.oldPrice}.00`}
-                                      </span>
-                                    </div>
-                                    <div className="course__btn">
-                                      <Link
-                                        href={`/course-details/${item.id}`}
-                                        className="link-btn"
-                                      >
-                                        Know Details
-                                        <i className="far fa-arrow-right"></i>
-                                        <i className="far fa-arrow-right"></i>
-                                      </Link>
-                                    </div>
-                                  </div>
+                              <div className="course__more d-flex justify-content-between align-items-center">
+                                <div className="course__status">
+                                  <span className={item.priceClass || ""}>
+                                    {item.price === 0 ? "FREE" : `$${item.price}`}
+                                  </span>
+                                  <span className="old-price">
+                                    {item.oldPrice !== 0 ? `$${item.oldPrice}` : ""}
+                                  </span>
+                                </div>
+                                <div className="course__btn">
+                                  <Link href={`/course-details/${item.id}`} className="link-btn">
+                                    Know Details
+                                    <i className="far fa-arrow-right"></i>
+                                    <i className="far fa-arrow-right"></i>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      ))}
-                    </div>
+                      </div>
+                    ))}
                   </div>
-                </div>
+                )}
               </div>
             </div>
           </div>
-          <div className="row">
+
+          {/* Pagination */}
+          <div className="row mt-4">
             <div className="col-xxl-12">
-              <div
-                className="basic-pagination wow fadeInUp mt-30"
-                data-wow-delay=".2s"
-              >
-                <ul className="d-flex align-items-center">
-                  <li className="prev">
-                    <Link href="/course-grid" className="link-btn link-prev">
-                      Prev
-                      <i className="arrow_left"></i>
-                      <i className="arrow_left"></i>
-                    </Link>
+              <div className="basic-pagination wow fadeInUp mt-30">
+                <ul className="d-flex align-items-center justify-content-center">
+                  <li className={currentPage === 1 ? "disabled" : ""}>
+                    <button
+                      className="link-btn link-prev"
+                      onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                      disabled={currentPage === 1}
+                    >
+                      Prev <i className="arrow_left"></i>
+                    </button>
                   </li>
-                  <li>
-                    <Link href="/course-grid">
-                      <span>1</span>
-                    </Link>
-                  </li>
-                  <li className="active">
-                    <Link href="/course-grid">
-                      <span>2</span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/course-grid">
-                      <span>3</span>
-                    </Link>
-                  </li>
-                  <li className="next">
-                    <Link href="/course-grid" className="link-btn">
-                      Next
-                      <i className="arrow_right"></i>
-                      <i className="arrow_right"></i>
-                    </Link>
+                  {Array.from({ length: totalPages }, (_, i) => (
+                    <li key={i + 1} className={currentPage === i + 1 ? "active" : ""}>
+                      <button onClick={() => setCurrentPage(i + 1)}>{i + 1}</button>
+                    </li>
+                  ))}
+                  <li className={currentPage === totalPages ? "disabled" : ""}>
+                    <button
+                      className="link-btn"
+                      onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+                      disabled={currentPage === totalPages}
+                    >
+                      Next <i className="arrow_right"></i>
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -338,6 +208,7 @@ const CourseListMain = () => {
           </div>
         </div>
       </section>
+
       <CtaSection />
     </>
   );
