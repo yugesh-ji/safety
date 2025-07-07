@@ -79,26 +79,24 @@ const AboutSection = () => {
                       alt="highlight background"
                     />
                   </span>{" "}
-                  Powered by RAIT
+                  Powered by RAHSM
                 </h2>
 
                 <p>
-                  At Rashm Academy of Information Technology, we don’t just teach — we transform careers.
-                  With Government-certified courses, 100% job assistance, and practical training,
-                  we help you build a future in Computer, IT, AI, and Digital Skills.
+                  At Rashm Academy of Health & Safety Management (RAHSM), we don’t just teach—we build safer futures. With Government-certified courses, 100% placement support, and practical training, we empower you with the critical skills for a successful career in Health and Safety Management.
                 </p>
               </div>
 
               <div className="about__list mb-35">
                 <ul>
                   <li className="d-flex align-items-center">
-                    <i className="fas fa-check"></i> Govt. Certified & Job-Oriented Courses
+                    <i className="fas fa-check"></i> Govt. Certified & Industry-Recognized Safety Courses
                   </li>
                   <li className="d-flex align-items-center">
-                    <i className="fas fa-check"></i> 100% Job Assistance After Course Completion
+                    <i className="fas fa-check"></i> 100% Placement Support in Top Companies
                   </li>
                   <li className="d-flex align-items-center">
-                    <i className="fas fa-check"></i> Practical & Project-Based Learning Environment
+                    <i className="fas fa-check"></i> Hands-On Training with Real-World Scenarios
                   </li>
                 </ul>
               </div>

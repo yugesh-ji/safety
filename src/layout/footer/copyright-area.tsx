@@ -19,7 +19,7 @@ const CopyrightArea = ({ wrapperClass, footerClass }: any) => {
               }
             >
               <p>
-                © 2025 RAIT, All Rights Reserved. Design By{" "}
+                © 2025 RAHSM, All Rights Reserved. Design By{" "}
                 <Link href="www.biproconnect.com">Business Promoters</Link>
               </p>
             </div>

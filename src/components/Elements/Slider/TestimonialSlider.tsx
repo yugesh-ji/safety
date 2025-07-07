@@ -25,7 +25,7 @@ const TestimonialSlider = () => {
           <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-10">
             <div className="testimonial__slider-3">
               <h3 className="testimonial__title">
-                Student <br /> Feedback at RAIT
+                Student <br /> Feedback at RAHSM
               </h3>
               <div className="testimonial__slider-wrapper testimonial-text mb-35">
                 <div>
@@ -39,12 +39,12 @@ const TestimonialSlider = () => {
                     <SwiperSlide>
                       <div className="testimonial__item-3">
                         <p>
-                          “RAIT में Tally और MS Office सीखकर मेरा confidence बहुत
-                          बढ़ गया। अब मैं accounting आसानी से कर लेता हूँ।” 
+                          “RAHSM में Industrial Safety का कोर्स करके मेरा confidence बहुत
+                          बढ़ गया। अब मैं workplace safety standards को आसानी से implement कर लेता हूँ।” 
                         </p>
                         <div className="testimonial__info-2 mb-45">
                           <h4>Rahul Kumar</h4>
-                          <span>Student - Tally with GST</span>
+                          <span>Student - Industrial Safety</span>
                         </div>
                         <div className="testimonial__nav-thumb">
                           <Image src={img1} alt="Rahul Kumar" />
@@ -55,12 +55,11 @@ const TestimonialSlider = () => {
                     <SwiperSlide>
                       <div className="testimonial__item-3">
                         <p>
-                          “मैंने यहाँ Graphic Designing का कोर्स किया और अब
-                          freelance projects भी मिलने लगे हैं। Thank you RAIT!” 
+                          “मैंने यहाँ Fire Safety का कोर्स किया और अब मैं अपनी कंपनी में fire drills conduct करता हूँ। Thank you RAHSM!” 
                         </p>
                         <div className="testimonial__info-2 mb-45">
                           <h4>Satyan Shukla</h4>
-                          <span>Student - Graphic Design</span>
+                          <span>Student - Fire Safety</span>
                         </div>
                         <div className="testimonial__nav-thumb">
                           <Image src={img2} alt="Satyan Shukla" />
@@ -71,13 +70,13 @@ const TestimonialSlider = () => {
                     <SwiperSlide>
                       <div className="testimonial__item-3">
                         <p>
-                          “Spoken English classes से मेरी communication skills
-                          improve हुई हैं और अब मैं confidently interview दे सकता
+                          “Disaster Management की ट्रेनिंग से मेरी decision-making skills
+                          improve हुई हैं और अब मैं किसी भी emergency के लिए तैयार
                           हूँ।” 
                         </p>
                         <div className="testimonial__info-2 mb-45">
                           <h4>Sonu Kumar</h4>
-                          <span>Student - Spoken English</span>
+                          <span>Student - Disaster Management</span>
                         </div>
                         <div className="testimonial__nav-thumb">
                           <Image src={img3} alt="Sonu Kumar" />
@@ -88,12 +87,11 @@ const TestimonialSlider = () => {
                     <SwiperSlide>
                       <div className="testimonial__item-3">
                         <p>
-                          “मैंने यहाँ MS Excel और PowerPoint सीखा। अब office में
-                          मेरी performance और भी better हो गई है।” 
+                          “Health & Safety Management का कोर्स करने के बाद, मैं अब अपने workplace पर एक सुरक्षित माहौल बना पा रहा हूँ।” 
                         </p>
                         <div className="testimonial__info-2 mb-45">
                           <h4>Shyam Yadav</h4>
-                          <span>Student - MS Office Advance</span>
+                          <span>Student - Health & Safety Management</span>
                         </div>
                         <div className="testimonial__nav-thumb">
                           <Image src={img4} alt="Shyam Yadav" />
@@ -131,8 +129,8 @@ const TestimonialSlider = () => {
                 <div className="testimonial__video-text">
                   <h4>Course Outcome</h4>
                   <p>
-                    RAIT के हर कोर्स के बाद students को real-world projects, job-ready
-                      skills और certification मिलता है जिससे वो future-ready बनते हैं।
+                    RAHSM के हर कोर्स के बाद students को practical training, job-ready
+                      skills और government-recognized certification मिलता है जिससे वो safety industry के लिए future-ready बनते हैं।
                     </p>
                 </div>
               </div>

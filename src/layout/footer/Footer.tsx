@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="footer__top pt-190 pb-40">
             <div className="container">
               <div className="row">
-                {/* RAIT Logo & About */}
+                {/* RAHSM Logo & About */}
                 <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
                   <div className="footer__widget mb-50">
                     <div className="footer__widget-head mb-22">
@@ -21,14 +21,14 @@ const Footer = () => {
                           <Image
                             src={FooterLogo}
                             style={{ width: "auto", height: "auto" }}
-                            alt="RAIT Logo"
+                            alt="RAHSM Logo"
                           />
                         </Link>
                       </div>
                     </div>
                     <div className="footer__widget-body">
                       <p>
-                        RAIT is the most trusted computer institute in
+                        RAHSM is the most trusted safety institute in
                         Gorakhpur. We offer job-oriented courses in Web Design,
                         Tally, Graphic Design, MS Office, and Spoken English.
                       </p>
@@ -41,12 +41,12 @@ const Footer = () => {
                             </Link>
                           </li>
                           <li>
-                            <Link href="https://www.instagram.com/rait.rashmgroup/" target="_blank" className="tw">
+                            <Link href="https://www.instagram.com/rahsm.rashmgroup/" target="_blank" className="tw">
                               <i className="fab fa-instagram"></i>
                             </Link>
                           </li>
                           <li>
-                            <Link href="https://www.youtube.com@rait.rashmgroup" target="_blank" className="pin">
+                            <Link href="https://www.youtube.com/@rahsm.rashmgroup" target="_blank" className="pin">
                               <i className="fab fa-youtube"></i>
                             </Link>
                           </li>
@@ -65,7 +65,7 @@ const Footer = () => {
                     <div className="footer__widget-body">
                       <div className="footer__link">
                         <ul>
-                          <li><Link href="/about">About RAIT</Link></li>
+                          <li><Link href="/about">About RAHSM</Link></li>
                           <li><Link href="/course-grid">Our Courses</Link></li>
                           <li><Link href="/contact">Contact Us</Link></li>
                           <li><Link href="/instructor">Our Faculty</Link></li>

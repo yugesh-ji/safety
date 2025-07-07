@@ -13,7 +13,7 @@ const ServiceSection = () => {
            <div className="row">
               <div className="col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3">
                  <div className="section__title-wrapper section-padding mb-60 text-center">
-                    <h2 className="section__title">🔹 Why Choose  <span className="yellow-bg">RAIT <Image src={YellowBg} style={{width:"auto", height:"auto"}} alt="img not found" /></span> Over the Ordinary? </h2>
+                    <h2 className="section__title">🔹 Why Choose  <span className="yellow-bg">RAHSM <Image src={YellowBg} style={{width:"auto", height:"auto"}} alt="img not found" /></span> Over the Ordinary? </h2>
                     <p>Because we {`don’t`} just teach — we transform.</p>
                  </div>
               </div>

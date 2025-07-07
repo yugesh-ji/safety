@@ -5,9 +5,9 @@ import ReduxProvider from "@/redux/provider";
 import { ToastContainer } from "react-toastify";
 
 export const metadata = {
-  title: "RAIT - Rashm Academy of Information Technology",
-  description: "Rashm Academy of Information Technology (RAIT) is a premier IT academy in Gorakhpur, India, offering a wide range of courses in computer science and information technology. Our mission is to empower students with the skills and knowledge needed to excel in the tech industry.",
-  keywords: "RAIT, Rashm Academy, IT Academy, Gorakhpur, Computer Courses, Information Technology, IT Training, Job Support, Digital Skills, Computer Education",
+  title: "RAHSM - Rashm Academy of Health & Safety Management",
+  description: "Rashm Academy of Health & Safety Management (RAHSM) is a premier safety institute in Gorakhpur, India, offering a wide range of courses in industrial safety, fire safety, and disaster management. Our mission is to empower individuals with the skills and knowledge needed to ensure workplace safety and build a successful career in the safety sector.",
+  keywords: "RAHSM, Rashm Academy, Safety Institute, Gorakhpur, Safety Courses, Health and Safety, Safety Training, Job Support, Industrial Safety, Fire Safety, Disaster Management",
 };
 
 export default function RootLayout({

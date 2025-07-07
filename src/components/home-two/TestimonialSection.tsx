@@ -44,13 +44,11 @@ const TestimonialSection = () => {
                     </div>
                     <div className="testimonial__content">
                       <p>
-                        “RAIT has completely changed my learning experience.
-                        The practical classes and expert trainers helped me get placed
-                        in a reputed company.”
+                        “RAHSM has completely changed my career path. The practical training and expert instructors helped me secure a great position in a reputed manufacturing company.”
                       </p>
                       <div className="testimonial__info">
                         <h4>Rahul Kumar</h4>
-                        <span>Software Developer</span>
+                        <span>Safety Officer</span>
                       </div>
                     </div>
                   </div>
@@ -67,12 +65,11 @@ const TestimonialSection = () => {
                     </div>
                     <div className="testimonial__content">
                       <p>
-                        “I joined the MS Office and Tally course at RAIT, and now I am confident
-                        in managing business data professionally. Thank you RAIT!”
+                        “I joined the Fire Safety and Risk Management course at RAHSM, and now I am confident in handling workplace emergencies professionally. Thank you RAHSM!”
                       </p>
                       <div className="testimonial__info">
                         <h4>Satyan Shukla</h4>
-                        <span>Accounts Executive</span>
+                        <span>Fire Safety Officer</span>
                       </div>
                     </div>
                   </div>
@@ -89,12 +86,11 @@ const TestimonialSection = () => {
                     </div>
                     <div className="testimonial__content">
                       <p>
-                        “Best computer training center in town! Faculty is supportive,
-                        syllabus is job-oriented, and I learned everything hands-on.”
+                        “Best safety training institute in the region! The faculty is supportive, the curriculum is job-oriented, and I learned everything through practical, hands-on training.”
                       </p>
                       <div className="testimonial__info">
                         <h4>Sonu Kumar</h4>
-                        <span>Computer Operator</span>
+                        <span>Safety Supervisor</span>
                       </div>
                     </div>
                   </div>
@@ -111,12 +107,11 @@ const TestimonialSection = () => {
                     </div>
                     <div className="testimonial__content">
                       <p>
-                        “RAIT made me confident in graphic design. Today, I’m working as a designer
-                        and doing freelancing too. Highly recommend to every student.”
+                        “RAHSM made me confident in workplace safety protocols. Today, I’m working as a safety consultant and helping companies improve their safety standards. Highly recommend to every student.”
                       </p>
                       <div className="testimonial__info">
                         <h4>Shyam Yadav</h4>
-                        <span>Graphic Designer</span>
+                        <span>Safety Consultant</span>
                       </div>
                     </div>
                   </div>
@@ -133,12 +128,11 @@ const TestimonialSection = () => {
                     </div>
                     <div className="testimonial__content">
                       <p>
-                        “I came from a non-technical background, but at RAIT,
-                        I learned everything from basics. Now I’m working confidently with computers.”
+                        “I had no prior knowledge of safety regulations, but at RAHSM, I learned everything from the ground up. Now I’m working confidently as a safety coordinator.”
                       </p>
                       <div className="testimonial__info">
                         <h4>Ram Kumar</h4>
-                        <span>Data Entry Operator</span>
+                        <span>Safety Coordinator</span>
                       </div>
                     </div>
                   </div>

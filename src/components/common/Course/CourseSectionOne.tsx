@@ -28,10 +28,10 @@ const CourseSectionOne = ({ courseTitle }: any) => {
                     alt="image not found"
                   />
                 </span>{" "}
-                at RAIT
+                at RAHSM
               </h2>
               <p>
-                Government-Recognized. Job-Focused. Powered by Practical Learning — Only at Rashm Academy of Information Technology.
+                Government-Recognized. Job-Focused. Powered by Practical Learning — Only at Rashm Academy of Health & Safety Management.
               </p>
             </div>
           </div>
