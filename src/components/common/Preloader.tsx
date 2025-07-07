@@ -17,13 +17,13 @@ const Preloader = () => {
                 alt="image not found"
                 loading="eager" // Use the 'loading' attribute to control image loading behavior
               />
-              <Image
+              {/* <Image
                 className="loading-logo-text-2"
                 style={{ width: "auto", height: "auto" }}
                 src={preloaderImgTwo}
                 alt="image not found"
                 loading="eager" // Use the 'loading' attribute to control image loading behavior
-              />
+              /> */}
             </div>
           </div>
         </div>
