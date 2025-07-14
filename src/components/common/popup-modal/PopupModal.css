@@ -1,0 +1,99 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #0052D4, #4364F7, #6FB1FC);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  position: relative;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inquiry-form input,
+.inquiry-form select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+}
+
+.inquiry-form input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.inquiry-form select option {
+  background: #4364F7;
+  color: white;
+}
+
+.inquiry-form button {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffffff;
+  color: #0052D4;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.inquiry-form button:hover {
+  background-color: #f0f0f0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
