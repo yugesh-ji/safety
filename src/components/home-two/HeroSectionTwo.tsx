@@ -34,7 +34,7 @@ const HeroSectionTwo = () => {
                   </span>
                 </h3>
                 <h5>🧯 Industrial Safety, Fire Safety, Disaster Mgmt. & More</h5>
-                <p>💥 Certified Safety Courses starting from just ₹499/month</p>
+                <p>💥 Certified Safety Courses starting now</p>
 
                 <div className="hero__search">
                   <form action="#">
@@ -62,7 +62,7 @@ const HeroSectionTwo = () => {
                     </div>
                     <div className="hero__promotion-text">
                       <h5>Congratulations</h5>
-                      <p>Your admission in Safety Course is confirmed</p>
+                      <p>Admission Open in Safety Course</p>
                     </div>
                   </div>
 
@@ -83,7 +83,7 @@ const HeroSectionTwo = () => {
                           <CountUpContent number={8} text="K" />
                         </span>
                       </h5>
-                      <p>Students Trained by Yugesh Sir</p>
+                      <p>Students Trained by Pavan Sir</p>
                     </div>
                   </div>
 

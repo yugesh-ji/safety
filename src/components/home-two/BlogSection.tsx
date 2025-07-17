@@ -12,7 +12,7 @@ const BlogSection = () => {
           <div className="col-xxl-6 offset-xxl-3">
             <div className="section__title-wrapper text-center mb-60">
               <h2 className="section__title">
-                RAIT shares <br />
+                Safety shares <br />
                 Valuable{" "}
                 <span className="yellow-bg yellow-bg-big">
                   insights{" "}

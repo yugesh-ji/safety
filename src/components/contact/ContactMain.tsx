@@ -111,7 +111,7 @@ const ContactMain = () => {
                           <h4>Email us directly</h4>
                           <p>
                             <Link href="mailto:support@educal.com">
-                              rait.rashmgroup@gmail.com
+                              safety.rashmgroup@gmail.com
                             </Link>
                           </p>
                           <p>
@@ -140,7 +140,7 @@ const ContactMain = () => {
                       </li>
                       <li>
                         <Link
-                          href="https://www.instagram.com/rait.rashmgroup/"
+                          href="https://www.instagram.com/safety.rashmgroup/"
                           target="_blank"
                           className="tw"
                         >
@@ -151,7 +151,7 @@ const ContactMain = () => {
                       
                       <li>
                       <Link
-                          href="https://www.linkedin.com/company/rait-rashmgroup"
+                          href="https://www.linkedin.com/company/safety-rashmgroup"
                           target="_blank"
                           className="tw"
                         >

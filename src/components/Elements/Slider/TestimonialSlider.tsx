@@ -110,7 +110,7 @@ const TestimonialSlider = () => {
               <div className="testimonial__thumb-3">
                 {/* <iframe
                   src="https://www.youtube.com/watch?v=_xgyup6z-CM&pp=ygUhbXMgZXhjZWwgZm9ybXVsYSB0YWIgc3VjY2VzcyBlZGdl"
-                  title="RAIT Course Outcome"
+                  title="Safety Course Outcome"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   style={{ width: "100%", height: "315px", border: "none" }}
                 ></iframe> */}

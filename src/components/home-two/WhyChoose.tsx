@@ -16,7 +16,7 @@ const WhyChoose = () => {
           <div className="col-xxl-5 offset-xxl-1 col-xl-5 offset-xl-1 col-lg-6 col-md-8">
             <div className="why__content pr-50 mt-40">
               <div className="section__title-wrapper mb-30">
-                <span className="section__sub-title">Why Choose RAIT</span>
+                <span className="section__sub-title">Why Choose Safety</span>
                 <h2 className="section__title">
                   Powerful Tools for{" "}
                   <span className="yellow-bg yellow-bg-big">
@@ -30,7 +30,7 @@ const WhyChoose = () => {
                   and Educators
                 </h2>
                 <p>
-                  RAIT offers industry-relevant computer courses, practical labs,
+                  Safety offers industry-relevant safety courses, practical labs,
                   and job-ready training — all backed by lifetime tech support
                   and dedicated faculty. Learn. Practice. Get Placed.
                 </p>

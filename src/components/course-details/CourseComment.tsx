@@ -37,7 +37,7 @@ const CourseComment = () => {
             </div>
             <div className="course__comment-text ml-70">
               <p>
-                I completed the Advanced Excel & Tally Prime course at RAIT. The trainers are very knowledgeable and supportive. Highly recommended!
+                I completed the Advanced Excel & Tally Prime course at Safety. The trainers are very knowledgeable and supportive. Highly recommended!
               </p>
             </div>
           </div>

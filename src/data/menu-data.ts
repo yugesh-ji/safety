@@ -23,19 +23,19 @@ const mobile_menu_data: MenuItem[] = [
     //   { title: "Home Style 3", link: "/home-3" },
     // ],
   },
-  {
-    id: 2,
-    hasDropdown: false,
-    title: "Courses",
-    link: "/course-grid",
-    pluseIncon: true,
-    // submenus: [
-    //   { title: "Courses", link: "/course-grid" },
-    //   { title: "Courses List", link: "/course-list" },
-    //   { title: "Course-Sidebar", link: "/course-sidebar" },
-    //   { title: "Course details", link: "/course-details" },
-    // ],
-  },
+  // {
+  //   id: 2,
+  //   hasDropdown: false,
+  //   title: "Courses",
+  //   link: "/course-grid",
+  //   pluseIncon: true,
+  //   // submenus: [
+  //   //   { title: "Courses", link: "/course-grid" },
+  //   //   { title: "Courses List", link: "/course-list" },
+  //   //   { title: "Course-Sidebar", link: "/course-sidebar" },
+  //   //   { title: "Course details", link: "/course-details" },
+  //   // ],
+  // },
 
   // {
   //   id: 3,

@@ -65,7 +65,7 @@ const blog_data: blogType[] = [
     blogWrapperClass: "blue",
     title: "Why RAHSM is the Top Safety Institute in Gorakhpur",
     authorImg: authorImgThree,
-    author: "Yugesh Sir",
+    author: "Pavan Sir",
     date: "April 10, 2025",
   },
   {
@@ -74,7 +74,7 @@ const blog_data: blogType[] = [
     blogTag: "Tech News",
     title: "Upcoming Safety Courses at RAHSM You Shouldn’t Miss",
     authorImg: authorImg,
-    author: "Yugesh Sir",
+    author: "Pavan Sir",
     date: "March 25, 2025",
   },
   {
@@ -84,7 +84,7 @@ const blog_data: blogType[] = [
     blogWrapperClass: "purple",
     title: "A Complete Guide to Our 6-Month Safety Diploma Courses",
     authorImg: authorImgTwo,
-    author: "Yugesh Sir",
+    author: "Pavan Sir",
     date: "March 10, 2025",
   },
   {
@@ -104,7 +104,7 @@ const blog_data: blogType[] = [
     blogWrapperClass: "blue",
     title: "Top 5 Skills to Master Before Entering the IT Industry",
     authorImg: authorImgThree,
-    author: "Yugesh Sir",
+    author: "Pavan Sir",
     date: "January 15, 2025",
   },
   {

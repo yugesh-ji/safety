@@ -62,7 +62,7 @@ const CounterSection = () => {
           <div className="col-xxl-6 offset-xl-3 col-xl-6 offset-xl-3">
             <div className="section__title-wrapper text-center mb-60">
               <h2 className="section__title">
-                RAIT is{" "}
+                Safety is{" "}
                 <span className="yellow-bg yellow-bg-big">
                   Proud
                   <Image
@@ -73,7 +73,7 @@ const CounterSection = () => {
                 </span>
               </h2>
               <p>
-                Join the thousands of learners who trust RAIT for quality computer education and guaranteed skill growth.
+                Join the thousands of learners who trust Safety for quality safety education and guaranteed skill growth.
               </p>
             </div>
           </div>
